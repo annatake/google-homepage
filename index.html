@@ -6,13 +6,13 @@
             <title>Google Homepage</title>
             <meta name="description" content="">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="">
+            <link rel="stylesheet" href="styles.css">
         </head>
 
     <body>
 
         <nav>
-            <ul class="nav-links">
+            <ul id="nav-links">
                 <span class="left-nav">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Store</a></li>
@@ -26,18 +26,24 @@
             </ul>
         </nav>
 
-        <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo"/>
-
-
-        <div class="search-form">
-            <input type="text" name="search">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png" width="12px">
-            <button type="submit">Google Search</button>
-            <a href="">I'm Feeling Lucky</a>
+        <div id="logo-bar">
+            <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo"/>
         </div>
 
+
+        <div id="search-form">
+            <div id="search-wrapper">
+                <img id="search-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/VisualEditor_-_Icon_-_Search.svg/1200px-VisualEditor_-_Icon_-_Search.svg.png">
+                <input id="search-bar" type="text" name="search">
+                <img id="mic-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png">
+            </div>
+            <button class="google-button" type="submit">Google Search</button>
+            <a class="google-button" href="#">I'm Feeling Lucky</a>
+        </div>
+
+
         <footer>
-            <ul>
+            <ul id="footer-links">
                 <span class="left-nav">
                     <li><a href="#">Advertising</a></li>
                     <li><a href="#">Business</a></li>
